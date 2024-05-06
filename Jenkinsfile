@@ -4,7 +4,7 @@ pipeline {
     stage('Test') {
       steps {
         sh 'docker build -t todo .'
-        sh 'docker run -d -p 8000:8000 todo'
+        sh 'docker run -d -p 8800:8000 todo'
       }
     }
   }
